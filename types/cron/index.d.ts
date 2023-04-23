@@ -19,7 +19,7 @@ export declare class CronTime {
      * @param zone Timezone name. Can be any string accepted by luxon's ```DateTime.setZone()``` (https://moment.github.io/luxon/api-docs/index.html#datetimesetzone).
      * @param utcOffset UTC offset. Don't use both ```zone``` and ```utcOffset``` together or weird things may happen.
      */
-    constructor(source: string | Date | DateTime, zone?: string, utcOffset?: string | number);
+    constructor(source: string, zone?: string, utcOffset?: string | number);
 
     /**
      * Tells you when ```CronTime``` will be run.
